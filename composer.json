@@ -1,0 +1,11 @@
+{
+    "require": {
+        "monolog/monolog": "1.0.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.2.1"
+    },
+    "autoload": {
+        "psr-4": {"Robth82\\": "lib/"}
+    }
+}
