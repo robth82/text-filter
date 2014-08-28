@@ -16,7 +16,7 @@ class FilterResponseTest extends \PHPUnit_Framework_TestCase {
     const RESPONSE_PARAMETER = 'test';
     const RESPONSE_DEFAULT_PARAMETER = 'default';
 
-    public function test()
+    public function testTextFilter()
     {
         $filterResponse = new FilterResponse();
 

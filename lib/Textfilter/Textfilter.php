@@ -16,7 +16,16 @@ class Textfilter {
 
     private $_threshold = 20;
 
-    function __construct(FilterResponse $response = null) {
+    function __construct(array $config, FilterResponse $response = null) {
+        foreach($config as $filter => $configuration) {
+            foreach ($configuration as $category => $files) {
+                foreach($files as $file) {
+                    $class = 'Robth82\Textfilter\Filter\\' . $filter;
+                    $this->addFilter(new $class(__dir__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'gard' . DIRECTORY_SEPARATOR . $category . DIRECTORY_SEPARATOR . $file, $category));
+                }
+            }
+        }
+
         if($response === null)
         {
             $response = new FilterResponse();
