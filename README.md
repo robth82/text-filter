@@ -5,7 +5,7 @@ textFilter
 
 Example:
 
-
+```php
 $config = array(
     'GardianFileFilter' => array(
         'drugadvocacy'=> array(
@@ -24,3 +24,9 @@ if($filter->analyze('this is in the american cannabis society'))
     echo 'Expleciet material found with score ';
     echo $filter->getResponse()->getScore();
 }
+```
+
+output
+```
+Expleciet material found with score 50
+```
