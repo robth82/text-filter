@@ -17,5 +17,10 @@
     },
     "autoload": {
         "psr-4": {"Robth82\\": "lib/"}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
     }
 }
