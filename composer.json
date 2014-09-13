@@ -1,4 +1,15 @@
 {
+    "name": "robth82/textFilter",
+    "description": "A PHP textFilter lib.",
+    "keywords": ["textfilter"],
+    "type": "library",
+    "homepage": "https://github.com/robth/textfilter",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Rob ter Haar",
+        }
+    ],
     "require": {
     },
     "require-dev": {
